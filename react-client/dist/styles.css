@@ -2,16 +2,10 @@
   text-align: center;
 }
 
-#headerButtons {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navButton {
-  float: right;
-  margin: auto;
-  text-align: center;
+.img-circle {
+  width: 220px;
+  height: 220px;
+  justify-content: center;
 }
 
 footer {
@@ -20,4 +14,14 @@ footer {
   height: 50px;
   background-color: black;
   color: white;
+}
+
+body {
+  background-image: url("http://usersthink.com/wp-content/uploads/06-usersthink-stock-image.jpg");
+  background-size: cover;
+}
+
+.name-title, h2, h4 {
+  color: white;
+  
 }
