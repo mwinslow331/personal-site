@@ -25,6 +25,11 @@
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "webpack": "^3.4.1"
+    "style-loader": "^0.20.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.11.0"
   }
 }

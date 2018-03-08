@@ -10,17 +10,25 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.css']
+    extensions: ['.js', '.jsx', '.json', '.css', '.scss']
   },
   module : {
     loaders : [
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        rules: [{
+          test: /\.css$/,
+          use: [{
+              loader: "style-loader" // creates style nodes from JS strings
+          }, {
+              loader: "css-loader" // translates CSS into CommonJS
+          }, {
+              loader: "sass-loader" // compiles Sass to CSS
+          }]
+        }]
       },
       {
         test: /\.png$/,
-        loader: 'url-loader?limit=100000&minetype=image/png'.
+        loader: 'url-loader?limit=100000&minetype=image/png'
       },
       {
         test: /\.jpg/,
@@ -32,7 +40,7 @@ module.exports = {
         loader : 'babel-loader',
         query: {
           presets: ['react', 'es2015']
-       }
+        }
       }
     ]
   },

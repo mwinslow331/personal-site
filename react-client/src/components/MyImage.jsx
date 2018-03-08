@@ -5,13 +5,11 @@ import {Grid, Row, Col, Image} from 'react-bootstrap';
 class MyImage extends Component {
   render(){
     return(
-      <Grid>
-        <Row className="profile-image">
-          <Col sm={12}>
-            <Image src="FullSizeRender.jpg" circle/>
-          </Col>
-        </Row>
-      </Grid>
+      <Row>
+        <Col sm={12} md={8} lg={4}>
+          <Image src="FullSizeRender.jpg" circle />
+        </Col>
+      </Row>
     )
   }
 }
